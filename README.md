@@ -7,4 +7,4 @@
 
  Tampilan halaman selanjutnya untuk mendaftar
 
- <img src="
+ <img src="https://github.com/Ulfiyah/UnaikCraft/blob/main/Screenshot_20230627_134719%5B1%5D.jpg" width = "300dp" height="600">
