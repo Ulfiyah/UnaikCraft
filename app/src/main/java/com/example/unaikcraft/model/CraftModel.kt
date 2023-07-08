@@ -12,5 +12,6 @@ data class CraftModel(
     val id: Int = 0,
     val nama: String,
     val alamat: String,
+    val nohp: String,
 
     ) : Parcelable
