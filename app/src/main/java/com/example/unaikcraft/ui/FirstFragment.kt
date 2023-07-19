@@ -46,6 +46,7 @@ class FirstFragment : Fragment() {
             val action= FirstFragmentDirections.actionFirstFragmentToSecondFragment(craft)
             findNavController().navigate(action)
         }
+        //binding visibilitas image view pada fragment first
         binding.recyclerView2.adapter = adapter
         binding.recyclerView2.layoutManager = LinearLayoutManager(context)
         unaikViewModel.allcraft.observe(viewLifecycleOwner) { crafter ->
@@ -60,10 +61,19 @@ class FirstFragment : Fragment() {
                 adapter.submitList(crafter)
             }
         }
-
+// binding floating button
         binding.arrow.setOnClickListener {
             val action = FirstFragmentDirections.actionFirstFragmentToSecondFragment(null)
            findNavController().navigate(action)
+        }
+        binding.aboutFAB.setOnClickListener {
+            findNavController().navigate(R.id.action_FirstFragment_to_AboutFragment)
+        }
+        binding.katalogFAB.setOnClickListener {
+            findNavController().navigate(R.id.action_FirstFragment_to_CatalogFragment)
+        }
+        binding.contactFAB.setOnClickListener {
+            findNavController().navigate(R.id.action_FirstFragment_to_ContactFragment)
         }
     }
 

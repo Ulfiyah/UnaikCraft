@@ -4,7 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.SecondFragment">
+    tools:context=".ui.SecondFragment"
+    android:background="@drawable/gradientbackground">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
@@ -16,6 +17,7 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:text="Nomor HP/WA"
+            android:textColor="#000000"
             app:layout_constraintEnd_toEndOf="@+id/editTextText2"
             app:layout_constraintStart_toStartOf="@+id/editTextText2"
             app:layout_constraintTop_toBottomOf="@+id/editTextText2" />
@@ -26,8 +28,7 @@
             android:layout_height="48dp"
             android:ems="10"
             android:inputType="text"
-            android:text=" "
-            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/nohp"
             app:layout_constraintStart_toStartOf="@+id/nohp"
             app:layout_constraintTop_toBottomOf="@+id/nohp" />
 
@@ -37,6 +38,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="128dp"
             android:text="Alamat"
+            android:textColor="#000000"
             app:layout_constraintEnd_toEndOf="@+id/editTextText"
             app:layout_constraintStart_toStartOf="@+id/editTextText"
             app:layout_constraintTop_toTopOf="parent" />
@@ -45,6 +47,7 @@
             android:id="@+id/editTextText2"
             android:layout_width="0dp"
             android:layout_height="48dp"
+            android:contentDescription="Enter"
             android:ems="10"
             android:inputType="text"
             app:layout_constraintEnd_toEndOf="parent"
@@ -58,6 +61,7 @@
             android:layout_marginStart="4dp"
             android:layout_marginTop="48dp"
             android:text="Nama"
+            android:textColor="#000000"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
@@ -67,7 +71,7 @@
             android:layout_height="48dp"
             android:ems="10"
             android:inputType="text"
-            android:text="  "
+            android:text="~"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="@+id/nama"

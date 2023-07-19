@@ -13,5 +13,7 @@ data class CraftModel(
     val nama: String,
     val alamat: String,
     val nohp: String,
+    val latitude : Double?,
+    val longitude : Double?
 
     ) : Parcelable
